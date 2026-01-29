@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium financial planning and wealth management services. Alternative layout.">
+    <title>Financial Advisor | Wealth Management</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap & Icons -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+
+    <!-- Navbar (Same as index) -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-graph-up-arrow me-2"></i>FinAdvisors
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button"
+                            data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home Default</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home Variant</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark Mode">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-primary btn-sm">Login</a>
+                    <a href="signup.html" class="btn btn-primary btn-sm">Signup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Variant -->
+    <section class="hero-section d-flex align-items-center"
+        style="background-image: url('assets/images/hero/home-2-bg.jpg'); padding: 10rem 0 8rem;">
+        <div class="hero-overlay"
+            style="background: linear-gradient(0deg, rgba(15, 23, 42, 1) 0%, rgba(15, 23, 42, 0.4) 100%);"></div>
+        <div class="container hero-content text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <span class="badge bg-primary px-3 py-2 mb-3 rounded-pill">Wealth Management Experts</span>
+                    <h1 class="hero-title display-3">Invest in Your Legacy</h1>
+                    <p class="hero-subtitle mx-auto">Providing clarity and direction for your financial journey with
+                        institutional-grade investment strategies.</p>
+                    <div class="hero-btn-group d-flex justify-content-center gap-3">
+                        <a href="contact.html" class="btn btn-accent btn-lg">Start Conversation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section (New in Home 2) -->
+    <section class="py-5 bg-surface border-bottom">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-3 col-6">
+                    <h2 class="fw-bold text-primary mb-0">$2B+</h2>
+                    <p class="text-secondary small">Assets Under Management</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="fw-bold text-primary mb-0">1.5k+</h2>
+                    <p class="text-secondary small">Families Served</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="fw-bold text-primary mb-0">20+</h2>
+                    <p class="text-secondary small">Years Experience</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="fw-bold text-primary mb-0">100%</h2>
+                    <p class="text-secondary small">Fiduciary Standard</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Cards Variant -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <h2 class="mb-3">Tailored Strategies</h2>
+                    <p class="text-secondary">We customize every aspect of your financial plan.</p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a href="services.html" class="btn btn-outline-primary">All Solutions</a>
+                </div>
+            </div>
+
+            <div class="row g-4 stagger-container">
+                <div class="col-lg-6 stagger-item">
+                    <div class="card p-5 h-100 border bg-surface">
+                        <div class="d-flex align-items-start gap-4">
+                            <div class="feature-icon bg-light-custom text-primary rounded-circle"
+                                style="width: 80px; height: 80px; flex-shrink: 0;"><i class="bi bi-briefcase"></i></div>
+                            <div>
+                                <h3>Business Advisory</h3>
+                                <p class="text-secondary">Succession planning, employee benefits, and executive
+                                    compensation strategies for business owners.</p>
+                                <a href="service-business-advisory.html" class="btn btn-sm btn-outline-primary mt-2">Learn
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 stagger-item">
+                    <div class="card p-5 h-100 border bg-surface">
+                        <div class="d-flex align-items-start gap-4">
+                            <div class="feature-icon bg-light-custom text-primary rounded-circle"
+                                style="width: 80px; height: 80px; flex-shrink: 0;"><i class="bi bi-piggy-bank"></i>
+                            </div>
+                            <div>
+                                <h3>Private Wealth</h3>
+                                <p class="text-secondary">Comprehensive wealth management for high-net-worth individuals
+                                    requiring sophisticated solutions.</p>
+                                <a href="service-investment-management.html" class="btn btn-sm btn-outline-primary mt-2">Learn
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Text Block Variant -->
+    <section class="section-padding bg-surface border-top">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <i class="bi bi-quote fs-1 text-primary opacity-50"></i>
+                    <h3 class="fst-italic my-4">"Our mission is to provide peace of mind through disciplined planning
+                        and transparent advice. We measure our success by your ability to achieve your goals."</h3>
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+                        <img src="assets/images/team/team-1.jpg" alt="CEO" class="rounded-circle object-fit-cover"
+                            width="60" height="60">
+                        <div class="text-start">
+                            <h6 class="mb-0 fw-bold">Sarah Jenkins</h6>
+                            <p class="mb-0 text-secondary small">Managing Partner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <h6 class="text-primary text-uppercase fw-bold ls-1">Our Process</h6>
+                <h2 class="mb-3">How We Work With You</h2>
+                <p class="text-secondary mw-600 mx-auto">A systematic approach to understanding your goals and building a comprehensive financial plan.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 fade-up">
+                    <div class="text-center">
+                        <div class="feature-icon mx-auto mb-3 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem;">
+                            <span class="fw-bold">1</span>
+                        </div>
+                        <h5 class="fw-bold mb-2">Discovery</h5>
+                        <p class="text-secondary small">We start by understanding your financial situation, goals, and risk tolerance through comprehensive consultations.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 fade-up" style="animation-delay: 0.1s;">
+                    <div class="text-center">
+                        <div class="feature-icon mx-auto mb-3 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem;">
+                            <span class="fw-bold">2</span>
+                        </div>
+                        <h5 class="fw-bold mb-2">Analysis</h5>
+                        <p class="text-secondary small">Our team analyzes your current portfolio, tax situation, and estate planning needs to identify opportunities.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 fade-up" style="animation-delay: 0.2s;">
+                    <div class="text-center">
+                        <div class="feature-icon mx-auto mb-3 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem;">
+                            <span class="fw-bold">3</span>
+                        </div>
+                        <h5 class="fw-bold mb-2">Strategy</h5>
+                        <p class="text-secondary small">We develop a customized financial plan tailored to your unique circumstances and long-term objectives.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 fade-up" style="animation-delay: 0.3s;">
+                    <div class="text-center">
+                        <div class="feature-icon mx-auto mb-3 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem;">
+                            <span class="fw-bold">4</span>
+                        </div>
+                        <h5 class="fw-bold mb-2">Implementation</h5>
+                        <p class="text-secondary small">We execute the plan and provide ongoing monitoring, rebalancing, and adjustments as your life evolves.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Blog Posts Section -->
+    <section class="section-padding bg-surface border-top">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <h2 class="mb-3">Latest Insights</h2>
+                    <p class="text-secondary">Stay informed with our expert analysis and market commentary.</p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a href="blog.html" class="btn btn-outline-primary">View All Articles</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 fade-up">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/images/blog/blog-1.jpg" class="card-img-top" alt="Blog" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary mb-2">Market Watch</span>
+                            <h5 class="card-title fw-bold mb-2">Navigating Interest Rate Volatility</h5>
+                            <p class="card-text text-secondary small mb-3">How recent Fed policies could impact your fixed income portfolio.</p>
+                            <a href="blog-interest-rate-volatility.html" class="text-primary fw-medium small text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up" style="animation-delay: 0.1s;">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/images/hero/hero-bg.jpg" class="card-img-top" alt="Blog" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary mb-2">Retirement</span>
+                            <h5 class="card-title fw-bold mb-2">Roth Conversions Explained</h5>
+                            <p class="card-text text-secondary small mb-3">Is now the right time to convert your traditional IRA to a Roth?</p>
+                            <a href="blog-roth-conversions.html" class="text-primary fw-medium small text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up" style="animation-delay: 0.2s;">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/images/services/service-1.jpg" class="card-img-top" alt="Blog" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary mb-2">Estate Planning</span>
+                            <h5 class="card-title fw-bold mb-2">The Importance of Trust Funds</h5>
+                            <p class="card-text text-secondary small mb-3">Protecting your assets through strategic trust establishment.</p>
+                            <a href="blog-trust-funds.html" class="text-primary fw-medium small text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Certifications Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <h6 class="text-primary text-uppercase fw-bold ls-1">Recognition</h6>
+                <h2 class="mb-3">Awards & Certifications</h2>
+                <p class="text-secondary mw-600 mx-auto">Recognized for excellence in financial planning and wealth management.</p>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 col-lg-3 fade-up">
+                    <div class="text-center p-4">
+                        <i class="bi bi-trophy-fill text-warning" style="font-size: 3rem;"></i>
+                        <h5 class="fw-bold mt-3 mb-2">Best Financial Advisor</h5>
+                        <p class="text-secondary small mb-0">Forbes 2024</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 fade-up" style="animation-delay: 0.1s;">
+                    <div class="text-center p-4">
+                        <i class="bi bi-award-fill text-primary" style="font-size: 3rem;"></i>
+                        <h5 class="fw-bold mt-3 mb-2">CFP® Certified</h5>
+                        <p class="text-secondary small mb-0">Certified Financial Planner Board</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 fade-up" style="animation-delay: 0.2s;">
+                    <div class="text-center p-4">
+                        <i class="bi bi-shield-check text-success" style="font-size: 3rem;"></i>
+                        <h5 class="fw-bold mt-3 mb-2">Fiduciary Standard</h5>
+                        <p class="text-secondary small mb-0">SEC Registered</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 fade-up" style="animation-delay: 0.3s;">
+                    <div class="text-center p-4">
+                        <i class="bi bi-star-fill text-warning" style="font-size: 3rem;"></i>
+                        <h5 class="fw-bold mt-3 mb-2">5-Star Rating</h5>
+                        <p class="text-secondary small mb-0">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white"><i class="bi bi-graph-up-arrow me-2"></i>FinAdvisors</h5>
+                    <p class="text-secondary">Providing top-tier financial advice and wealth management services to help
+                        you achieve your life goals with confidence and clarity.</p>
+                    <div class="mt-4">
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Services</h5>
+                    <a href="services.html">Investment Mgmt</a>
+                    <a href="services.html">Retirement</a>
+                    <a href="services.html">Estate Planning</a>
+                    <a href="services.html">Tax Strategy</a>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Company</h5>
+                    <a href="about.html">About Us</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5>Newsletter</h5>
+                    <p class="text-secondary mb-3">Market insights delivered to your inbox.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex justify-content-between flex-wrap">
+                <p>&copy; 2024 FinAdvisors Inc. All rights reserved.</p>
+                <div class="d-flex gap-3">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="mt-3 text-secondary" style="font-size: 0.75rem;">
+                <p>* Past performance is not indicative of future results. All investing involves risk. This website is
+                    for informational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+
+</html>

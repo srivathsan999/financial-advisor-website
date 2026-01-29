@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | FinAdvisors</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Fonts & Bootstrap -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-graph-up-arrow me-2"></i>FinAdvisors
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home Default</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home Variant</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark Mode">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-primary btn-sm">Login</a>
+                    <a href="signup.html" class="btn btn-primary btn-sm">Signup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="bg-surface py-5 mt-5 text-center">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Market Insights</h1>
+            <p class="lead text-secondary">Expert analysis and financial news.</p>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Blog Post 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 hover-lift">
+                        <img src="assets/images/blog/blog-1.jpg" class="card-img-top" alt="Market trends" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-light text-primary">Market Watch</span>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Navigating Interest Rate Volatility</h4>
+                            <p class="card-text text-secondary mb-3 flex-grow-1">How recent Fed policies could impact your fixed income
+                                portfolio and what strategies we recommend.</p>
+                            <div class="mt-auto">
+                                <a href="blog-interest-rate-volatility.html" class="text-primary fw-medium text-decoration-none">Read Article
+                                    <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-secondary small">
+                            <i class="bi bi-calendar3 me-1"></i> Oct 15, 2024
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 hover-lift">
+                        <img src="assets/images/hero/hero-bg.jpg" class="card-img-top" alt="Retirement" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-light text-primary">Retirement</span>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Roth Conversions Explained</h4>
+                            <p class="card-text text-secondary mb-3 flex-grow-1">Is now the right time to convert your traditional IRA to
+                                a Roth? We break down the tax implications.</p>
+                            <div class="mt-auto">
+                                <a href="blog-roth-conversions.html" class="text-primary fw-medium text-decoration-none">Read Article
+                                    <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-secondary small">
+                            <i class="bi bi-calendar3 me-1"></i> Oct 02, 2024
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 hover-lift">
+                        <img src="assets/images/services/service-1.jpg" class="card-img-top" alt="Estate Planning" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-light text-primary">Estate Planning</span>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">The Importance of Trust Funds</h4>
+                            <p class="card-text text-secondary mb-3 flex-grow-1">Protecting your assets and ensuring your family's future
+                                through strategic trust establishment.</p>
+                            <div class="mt-auto">
+                                <a href="blog-trust-funds.html" class="text-primary fw-medium text-decoration-none">Read Article
+                                    <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-secondary small">
+                            <i class="bi bi-calendar3 me-1"></i> Sep 28, 2024
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Post 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100 hover-lift">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop" class="card-img-top" alt="Tax Planning" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-light text-primary">Tax Strategy</span>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Year-End Tax Planning Strategies</h4>
+                            <p class="card-text text-secondary mb-3 flex-grow-1">Maximize your tax savings before the year ends with these
+                                proven strategies and deductions you might be missing.</p>
+                            <div class="mt-auto">
+                                <a href="blog-tax-planning.html" class="text-primary fw-medium text-decoration-none">Read Article
+                                    <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-secondary small">
+                            <i class="bi bi-calendar3 me-1"></i> Sep 20, 2024
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Post 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100 hover-lift">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop" class="card-img-top" alt="Investment" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-light text-primary">Investment</span>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Diversification in Uncertain Markets</h4>
+                            <p class="card-text text-secondary mb-3 flex-grow-1">Why spreading your investments across asset classes remains
+                                the cornerstone of long-term wealth building.</p>
+                            <div class="mt-auto">
+                                <a href="blog-diversification.html" class="text-primary fw-medium text-decoration-none">Read Article
+                                    <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-secondary small">
+                            <i class="bi bi-calendar3 me-1"></i> Sep 15, 2024
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Post 6 -->
+                <div class="col-md-4">
+                    <div class="card h-100 hover-lift">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=500&fit=crop" class="card-img-top" alt="Education Planning" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-light text-primary">Education</span>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">529 Plans: A Complete Guide</h4>
+                            <p class="card-text text-secondary mb-3 flex-grow-1">Everything you need to know about 529 college savings plans,
+                                from contribution limits to tax benefits and withdrawal strategies.</p>
+                            <div class="mt-auto">
+                                <a href="blog-529-plans.html" class="text-primary fw-medium text-decoration-none">Read Article
+                                    <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-secondary small">
+                            <i class="bi bi-calendar3 me-1"></i> Sep 10, 2024
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white"><i class="bi bi-graph-up-arrow me-2"></i>FinAdvisors</h5>
+                    <p class="text-secondary">Providing top-tier financial advice and wealth management services to help
+                        you achieve your life goals with confidence and clarity.</p>
+                    <div class="mt-4">
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Services</h5>
+                    <a href="services.html">Investment Mgmt</a>
+                    <a href="services.html">Retirement</a>
+                    <a href="services.html">Estate Planning</a>
+                    <a href="services.html">Tax Strategy</a>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Company</h5>
+                    <a href="about.html">About Us</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5>Newsletter</h5>
+                    <p class="text-secondary mb-3">Market insights delivered to your inbox.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex justify-content-between flex-wrap">
+                <p>&copy; 2024 FinAdvisors Inc. All rights reserved.</p>
+                <div class="d-flex gap-3">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="mt-3 text-secondary" style="font-size: 0.75rem;">
+                <p>* Past performance is not indicative of future results. All investing involves risk. This website is
+                    for informational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+</body>
+
+</html>

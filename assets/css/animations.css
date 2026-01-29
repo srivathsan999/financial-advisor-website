@@ -1,0 +1,29 @@
+/* GSAP Animation Helper Classes */
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.fade-in {
+    opacity: 0;
+}
+
+.stagger-item {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Micro Interactions */
+.hover-lift {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+}
