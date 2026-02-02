@@ -8,7 +8,7 @@
     --text-primary: #0F172A;
     --text-secondary: #475569;
     --border-color: #E2E8F0;
-    
+
     /* Typography */
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Inter', sans-serif;
@@ -27,7 +27,12 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     font-weight: 600;
     color: var(--secondary-color);
@@ -52,11 +57,15 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-.navbar-brand {
+.navbar-brand,
+.brand-standard {
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 1.5rem;
-    color: var(--primary-color) !important;
+    color: #60A5FA !important;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 .nav-link {
@@ -65,7 +74,8 @@ a:hover {
     margin: 0 0.5rem;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--primary-color) !important;
 }
 
@@ -111,6 +121,27 @@ a:hover {
     padding: 0.5rem 1.25rem;
     min-width: 80px;
     text-align: center;
+}
+
+/* Dashboard action buttons - consistent sizing */
+.bg-surface .btn-sm,
+.border-bottom .btn-sm {
+    min-width: 150px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Quick Actions buttons - force identical sizing */
+.card-body .btn-sm.w-100 {
+    height: 38px;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 1px !important;
 }
 
 .btn-accent {
@@ -184,6 +215,27 @@ a:hover {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
+}
+
+/* Blog Card Alignment */
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+}
+
+.card .card-title {
+    min-height: 3.5rem;
+    line-height: 1.75rem;
+}
+
+.card .card-text {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.card .mt-auto {
+    margin-top: auto !important;
 }
 
 .feature-icon {
@@ -268,10 +320,21 @@ footer .social-link {
 }
 
 /* Utilities */
-.text-primary-custom { color: var(--primary-color); }
-.text-secondary-custom { color: var(--secondary-color); }
-.bg-light-custom { background-color: var(--background-color); }
-.bg-surface { background-color: var(--surface-color); }
+.text-primary-custom {
+    color: var(--primary-color);
+}
+
+.text-secondary-custom {
+    color: var(--secondary-color);
+}
+
+.bg-light-custom {
+    background-color: var(--background-color);
+}
+
+.bg-surface {
+    background-color: var(--surface-color);
+}
 
 /* Form Controls */
 .form-control {
@@ -286,4 +349,41 @@ footer .social-link {
     box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15);
     background-color: var(--surface-color);
     color: var(--text-primary);
+}
+
+/* Dashboard Specific Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 3rem 0;
+    }
+
+    .feature-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.25rem;
+    }
+
+    /* Reduce hero and large button sizes on mobile */
+    .btn-lg {
+        padding: 0.6rem 1.25rem !important;
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    .d-flex.gap-2,
+    .d-flex.gap-3 {
+        gap: 0.75rem !important;
+    }
+
+    /* Ensure tables don't push container width */
+    .table-responsive {
+        margin: 0 -1rem;
+        padding: 0 1rem;
+        width: calc(100% + 2rem);
+    }
 }

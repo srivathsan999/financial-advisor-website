@@ -25,8 +25,8 @@
     <!-- Header with Brand and Logout -->
     <header class="bg-surface border-bottom py-3">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <a href="index.html" class="navbar-brand mb-0" style="font-size: 1.5rem; color: var(--primary-color); text-decoration: none;">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <a href="index.html" class="navbar-brand mb-0">
                     <i class="bi bi-graph-up-arrow me-2"></i>FinAdvisors
                 </a>
                 <a href="index.html" class="btn btn-outline-danger btn-sm">
@@ -39,12 +39,12 @@
     <!-- Dashboard Header -->
     <section class="bg-surface py-4 border-bottom">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
                 <div>
                     <h2 class="mb-1">Portfolio Dashboard</h2>
                     <p class="text-secondary mb-0">Welcome back, John Doe</p>
                 </div>
-                <div class="d-flex gap-2">
+                <div class="d-flex gap-2 flex-wrap">
                     <button class="btn btn-outline-primary btn-sm">
                         <i class="bi bi-download me-1"></i>Export Report
                     </button>
@@ -148,26 +148,30 @@
                         <div class="card-body">
                             <h5 class="card-title mb-4">Asset Allocation</h5>
                             <div class="d-flex justify-content-center mb-4">
-                                <canvas id="allocationChart" style="max-width: 300px; max-height: 300px;"></canvas>
+                                <canvas id="allocationChart" style="max-width: 100%; max-height: 300px;"></canvas>
                             </div>
                             <div class="row g-3">
                                 <div class="col-6">
                                     <div class="d-flex align-items-center mb-2">
-                                        <div class="rounded-circle me-2" style="width: 12px; height: 12px; background-color: #1E3A8A;"></div>
+                                        <div class="rounded-circle me-2"
+                                            style="width: 12px; height: 12px; background-color: #1E3A8A;"></div>
                                         <span class="small">Stocks: 65%</span>
                                     </div>
                                     <div class="d-flex align-items-center mb-2">
-                                        <div class="rounded-circle me-2" style="width: 12px; height: 12px; background-color: #16A34A;"></div>
+                                        <div class="rounded-circle me-2"
+                                            style="width: 12px; height: 12px; background-color: #16A34A;"></div>
                                         <span class="small">Bonds: 20%</span>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="d-flex align-items-center mb-2">
-                                        <div class="rounded-circle me-2" style="width: 12px; height: 12px; background-color: #F59E0B;"></div>
+                                        <div class="rounded-circle me-2"
+                                            style="width: 12px; height: 12px; background-color: #F59E0B;"></div>
                                         <span class="small">Real Estate: 10%</span>
                                     </div>
                                     <div class="d-flex align-items-center mb-2">
-                                        <div class="rounded-circle me-2" style="width: 12px; height: 12px; background-color: #EF4444;"></div>
+                                        <div class="rounded-circle me-2"
+                                            style="width: 12px; height: 12px; background-color: #EF4444;"></div>
                                         <span class="small">Cash: 5%</span>
                                     </div>
                                 </div>
@@ -180,7 +184,7 @@
                 <div class="col-lg-6">
                     <div class="card border-0 shadow-sm h-100">
                         <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
                                 <h5 class="card-title mb-0">Portfolio Performance</h5>
                                 <div class="btn-group btn-group-sm" role="group">
                                     <button type="button" class="btn btn-outline-primary active">1M</button>
@@ -200,11 +204,12 @@
     <!-- Holdings Table -->
     <section class="section-padding bg-surface border-top">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
                 <h4 class="mb-0">Investment Holdings</h4>
-                <div class="d-flex gap-2">
-                    <input type="text" class="form-control form-control-sm" placeholder="Search holdings..." style="width: 200px;">
-                    <select class="form-select form-select-sm" style="width: 150px;">
+                <div class="d-flex gap-2 flex-wrap flex-grow-1 justify-content-md-end">
+                    <input type="text" class="form-control form-control-sm" placeholder="Search holdings..."
+                        style="min-width: 150px; flex: 1; max-width: 300px;">
+                    <select class="form-select form-select-sm" style="min-width: 150px; flex: 1; max-width: 300px;">
                         <option>All Sectors</option>
                         <option>Technology</option>
                         <option>Healthcare</option>
@@ -372,24 +377,25 @@
                 <div class="col-lg-4">
                     <h4 class="mb-4">Quick Actions</h4>
                     <div class="card border-0 shadow-sm mb-3">
-                        <div class="card-body">
-                            <h6 class="card-title">Buy Securities</h6>
-                            <p class="card-text text-secondary small">Purchase stocks, bonds, or ETFs</p>
-                            <button class="btn btn-primary btn-sm w-100">Place Buy Order</button>
+                        <div class="card-body d-flex flex-column" style="min-height: 140px;">
+                            <h6 class="card-title mb-2">Buy Securities</h6>
+                            <p class="card-text text-secondary small mb-3 flex-grow-1">Purchase stocks, bonds, or ETFs
+                            </p>
+                            <button class="btn btn-primary btn-sm w-100 mt-auto">Place Buy Order</button>
                         </div>
                     </div>
                     <div class="card border-0 shadow-sm mb-3">
-                        <div class="card-body">
-                            <h6 class="card-title">Sell Securities</h6>
-                            <p class="card-text text-secondary small">Sell your current holdings</p>
-                            <button class="btn btn-outline-danger btn-sm w-100">Place Sell Order</button>
+                        <div class="card-body d-flex flex-column" style="min-height: 140px;">
+                            <h6 class="card-title mb-2">Sell Securities</h6>
+                            <p class="card-text text-secondary small mb-3 flex-grow-1">Sell your current holdings</p>
+                            <button class="btn btn-outline-danger btn-sm w-100 mt-auto">Place Sell Order</button>
                         </div>
                     </div>
                     <div class="card border-0 shadow-sm">
-                        <div class="card-body">
-                            <h6 class="card-title">Transfer Funds</h6>
-                            <p class="card-text text-secondary small">Deposit or withdraw funds</p>
-                            <button class="btn btn-outline-primary btn-sm w-100">Transfer</button>
+                        <div class="card-body d-flex flex-column" style="min-height: 140px;">
+                            <h6 class="card-title mb-2">Transfer Funds</h6>
+                            <p class="card-text text-secondary small mb-3 flex-grow-1">Deposit or withdraw funds</p>
+                            <button class="btn btn-outline-primary btn-sm w-100 mt-auto">Transfer Funds</button>
                         </div>
                     </div>
                 </div>
@@ -403,7 +409,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="assets/js/theme-toggle.js"></script>
     <script src="assets/js/animations.js"></script>
-    
+
     <!-- Dashboard Charts Script -->
     <script>
         // Asset Allocation Chart
@@ -458,7 +464,7 @@
                     y: {
                         beginAtZero: false,
                         ticks: {
-                            callback: function(value) {
+                            callback: function (value) {
                                 return '$' + (value / 1000000).toFixed(1) + 'M';
                             }
                         }
@@ -470,4 +476,3 @@
 </body>
 
 </html>
-
