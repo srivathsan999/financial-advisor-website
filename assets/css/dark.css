@@ -55,8 +55,7 @@ body.dark-mode .text-primary-custom {
 }
 
 body.dark-mode .feature-icon {
-    background-color: rgba(96, 165, 250, 0.1);
-    color: #60A5FA;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 body.dark-mode .glass-card {
@@ -98,6 +97,9 @@ body.dark-mode .form-label {
 }
 
 body.dark-mode .form-select {
+    background-color: #1E293B;
+    border-color: #334155;
+    color: #F8FAFC;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23CBD5E1' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
 
@@ -135,4 +137,70 @@ body.dark-mode .accordion-button::after {
 body.dark-mode .btn-outline-primary:hover {
     background-color: #60A5FA;
     color: #020617;
+}
+
+/* Dashboard Table Dark Mode */
+body.dark-mode .table {
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .table thead.table-light tr th {
+    background-color: #1E293B;
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .table tbody tr td {
+    background-color: var(--surface-color);
+    color: var(--text-secondary);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .table-hover tbody tr:hover td {
+    background-color: #1E293B;
+    color: var(--text-primary);
+}
+
+body.dark-mode .table-responsive {
+    border-color: var(--border-color);
+}
+
+body.dark-mode .table-light {
+    --bs-table-bg: #1E293B;
+    --bs-table-color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+/* Success/Danger Text Contrast */
+body.dark-mode .text-success {
+    color: #4ADE80 !important;
+}
+
+body.dark-mode .text-danger {
+    color: #F87171 !important;
+}
+
+body.dark-mode .badge.bg-success {
+    background-color: rgba(74, 222, 128, 0.2) !important;
+    color: #4ADE80 !important;
+    border: 1px solid rgba(74, 222, 128, 0.3);
+}
+
+body.dark-mode .badge.bg-danger {
+    background-color: rgba(248, 113, 113, 0.2) !important;
+    color: #F87171 !important;
+    border: 1px solid rgba(248, 113, 113, 0.3);
+}
+
+body.dark-mode .badge.bg-primary {
+    background-color: rgba(96, 165, 250, 0.2) !important;
+    color: #60A5FA !important;
+    border: 1px solid rgba(96, 165, 250, 0.3);
+}
+
+body.dark-mode .badge.bg-info {
+    background-color: rgba(45, 212, 191, 0.2) !important;
+    color: #2DD4BF !important;
+    border: 1px solid rgba(45, 212, 191, 0.3);
 }
