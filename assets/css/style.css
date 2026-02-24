@@ -320,6 +320,10 @@ footer .social-link {
 }
 
 /* Utilities */
+.no-caret::after {
+    display: none !important;
+}
+
 .text-primary-custom {
     color: var(--primary-color);
 }
